@@ -1,0 +1,64 @@
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgb(142, 92, 48);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.titre {
+    font-size: 24px;
+    color: #d39e00; /* Couleur dorée pour rappeler les bijoux */
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+p{
+    text-align: justify;
+    margin: 20px 0; /* Marges en haut et en bas */
+    padding: 25px; /* Espacement intérieur */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px;
+    margin: auto;
+}
+
+img {
+    width: 200px; /* Ajustez la taille selon vos besoins */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+} 
+
+div {
+    animation: slide-in 0.7s ease forwards;
+} 
+img:hover{
+    transform: scale(1.1) rotate(0.5deg); /* Agrandir et faire tourner l'image au survol */
+    opacity: 0.7; /* Changer l'opacité au survol */
+}
+/* @keyframes est une fonctionnalité de CSS, utilisée pour créer des animations. Elle permet de définir les étapes d'une animation en spécifiant des styles à différents moments de l'animation. */
+/* @keyframes move : Décrit l'animation, en définissant les styles aux différents pourcentages (0%, 50%, 100%) de la durée de l'animation. transform: translateX(...) : Déplace l'élément horizontalement. */
+
+@keyframes slide-in {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Animation au survol */

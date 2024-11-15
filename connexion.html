@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> La Magie Des Gemmes </title>
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="icon" sizes="192x192" href="img/logo-png.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <!-- logo+ Nom de site   -->
+         <!-- la barre de la navigation -->
+          <!-- <div id="Logo">
+         <img src="img/logo.png" alt="Logo">
+        </div> -->
+         <nav class="menu">
+            <ul>
+              <li><a class="Logo" href="#"> <img id="Logo" src="img/logo-png.png" alt="Logo"> </a></li>
+              <li><a  href="Accueil.html">Accueil</a></li>
+              <li><a  href="Inscription.html">Inscription</a></li>
+              <li><a class="active" href="connexion.html"> Connexion</a></li>
+              <li><a href="contact.html" >Contact SAV</a></li>
+              <li><div class="panier">
+                <img src="img/sac-de-courses.png" alt="Panier" />
+                <span class="Panier"></span>
+                </div>
+            </ul>
+          </nav>
+
+    </header>
+    <main>
+        <div class="header">
+            <img src="img/logo-png.png" alt="Logo" class="logo">
+            <h1 class="title"> La Magie Des Gemmes</h1>
+        </div>
+            <h2> Connectez vous</h2>
+            <form method="post" action="" enctype="multipart/form-data"> 
+    
+                <p> Champs obligatoire *</p>
+            <label for="nom"> Nom *</label>
+            <br>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required pattern="[A-Za-z ]{2,30}" maxlength="30" title="vous pouvez utiliser les lettres de l'alphabet, miniscules comme majuscules, deux minimum, trente maximum">
+            <br>
+            <label for="Mot de passe"> Votre Mot de passe * </label>
+            <br>
+            <input  type="password" id="Mot de passe" name=" Mot de passe" placeholder="Mot de passe" required pattern=([a-zA-Z0-9\-_.@]{5,20})>
+            <br>
+            <label for="submit"> Cliquez ici pour Se Connecter</label><br>
+            <input class="submit" type="submit" name="Connexion" value= "Connexion">
+            <label for="submit"></label>
+            <input class="submit" type="reset" name="Annuler" value="Annuler">
+    </main>
+    <footer>
+        <!-- le copy right, l'année en cours, et le nom du site -->
+            <p>©-2024-La Magie Des Gemmes</p>
+            <ul class="mentions-legales">
+                <li><a href="#conditions">Conditions d'utilisation</a></li>
+                <li><a href="#confidentialite">Politique de confidentialité</a></li>
+                <li><a href="#retours">Politique de retours</a></li>
+            </ul>
+            <p class="contact"> Contactez-nous : <a href="mailto:contact@LaMagieDesGermmes.com">contact@LaMagieDesGermmes.com</a></p>
+        
+    </footer>
+</body>
+</html>
